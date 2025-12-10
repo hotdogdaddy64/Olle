@@ -8,3 +8,95 @@
     
 }
 
+/* Grundinställningar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 1000px; /* Fast bredd så det ser bra ut på datorn */
+    margin: 0 auto; /* Centrerar hela sidan */
+    padding: 20px;
+}
+
+/* --- HEADER & NAV --- */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcccc; /* Ljusröd */
+    margin-bottom: 10px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    text-align: center;
+    background-color: #ccffcc; 
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 200px; 
+    gap: 20px; 
+    grid-template-areas: 
+        "hero   hero   hero   hero"
+        "stort  stort  kaffe  tider"
+        "stort  stort  inre   bulle";
+}
+
+
+.box {
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.hero {
+    grid-area: hero;
+    background-color: #ffeba1; 
+}
+
+.stort {
+    grid-area: stort;
+    background-color: #add8e6; 
+}
+
+.kaffe {
+    grid-area: kaffe;
+    background-color: #ffb6c1; 
+}
+
+.tider {
+    grid-area: tider;
+    background-color: #e0e0e0; 
+}
+
+.inre {
+    grid-area: inre;
+    background-image: url(../img/Kafémiljö.png);
+    background-size: cover;
+    
+}
+
+
+.bulle {
+    grid-area: bulle;
+    background-image: url(../img/Bulle.png);
+    background-size: cover;
+
+}
