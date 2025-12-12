@@ -1,0 +1,139 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #b58b63; 
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.loga{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-color: #f6efe8;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    color: #f6efe8; 
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+}
+
+.contact-box {
+    background-color: #f6efe8; 
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.catering-side {
+    grid-column: span 2; 
+}
+
+.info-side p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.map {
+    margin-top: 30px;
+    height: 150px;
+    background-color: #e0d0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.map img {
+ width: 100%;       
+    height: 100%;      
+    object-fit: cover; 
+    display: block;   
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-group {
+    flex: 1; 
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #b58b63; 
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #8f6a48; 
+}

@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kontakta-oss</title>
+    <link rel="stylesheet" href="css/kontakt.css">
 </head>
 <body>
-    
+        <header>
+        <div class="logo-area">
+            <img src="img/kaffeloggan.png" class="loga" alt="En kaffekopp">
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Startsida</a>
+        <a href="meny.html">Meny</a>
+        <a href="kontakta-oss.html" class="active">Kontakta oss</a>
+    </nav>
+    <main>
+
+        <div class="contact-container">
+            
+            <div class="contact-box info-side">
+                <h3>Här finns vi</h3>
+                <p><strong>Adress:</strong><br>Östanvägen 4<br>271 77 Löderup</p>
+                <br>
+                <p><strong>Telefon:</strong><br>070 513 53 05</p>
+                <br>
+                <p><strong>E-post:</strong><br>hej@cafesolglimt.se</p>
+                
+                <div class="map">
+                    <img src="img/Karta.png" alt="karta">
+                </div>
+            </div>
+
+            <div class="contact-box form-side">
+                <h3>Skicka ett meddelande</h3>
+                <form>
+                    <label for="namn">Ditt namn:</label>
+                    <input type="text" id="namn" placeholder="Skriv ditt namn...">
+
+                    <label for="email">Din e-post:</label>
+                    <input type="email" id="email" placeholder="namn@mail.se">
+
+                    <label for="meddelande">Ditt meddelande:</label>
+                    <textarea id="meddelande" rows="5" placeholder="Vad funderar du på?"></textarea>
+
+                    <button type="submit">Skicka meddelande</button>
+                </form>
+            </div>
+
+            <div class="contact-box catering-side">
+                <h3>Beställ Catering</h3>
+                <p>Ska ni ha fest eller möte? Vi fixar fikat! Fyll i önskemål nedan så återkommer vi med pris.</p>
+                
+                <form>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="datum">Datum:</label>
+                            <input type="date" id="datum">
+                        </div>
+                        <div class="input-group">
+                            <label for="antal">Antal personer:</label>
+                            <input type="number" id="antal" placeholder="T.ex. 15">
+                        </div>
+                    </div>
+
+                    <label for="cat-info">Vad vill ni beställa?</label>
+                    <textarea id="cat-info" rows="3" placeholder="T.ex. 20 kanelbullar, 2 termosar kaffe och en prinsesstårta..."></textarea>
+
+                    <button type="submit">Skicka förfrågan</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+
 </body>
 </html>
